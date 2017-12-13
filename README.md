@@ -1,3 +1,3 @@
 Angular 4 training for GAP
 
-Session 2 -> Typescript
+Session #5 -> Typescript
