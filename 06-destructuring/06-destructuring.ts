@@ -1,4 +1,4 @@
-const notAJedi = {first: 'Anakin', last: 'Skywalker', age: 20 };
+// const notAJedi = {first: 'Anakin', last: 'Skywalker', age: 20 };
 
 // Old way
 // const f = notAJedi.first;
@@ -33,18 +33,20 @@ const notAJedi = {first: 'Anakin', last: 'Skywalker', age: 20 };
 
 
 
-// // Function Parameter Destructuring old
-// function f(options) {
-//   console.log(options.x);
+// // Function Parameter object old
+// function f(jediCouncilMembers) {
+//   console.log(jediCouncilMembers.grandJediMaster);
 // }
-// f({x:1}); // 1
+// f({grandJediMaster:"Yoda", seniorJediMaster:"Mace Windu"});
 
-// function f({x}) {
-//   console.log(x); // Refer to x directly
+// // Function Parameter Destructuring
+// function f({grandJediMaster, seniorJediMaster}) {
+//   console.log(grandJediMaster); // Refer to grandJediMaster directly
 // }
-// f({x:1});
+// f({grandJediMaster:"Yoda", seniorJediMaster:"Mace Windu"});
 
-// function f({x=0}) {
-//   console.log(x);
+// // Function Parameter Destructuring default value
+// function f({grandJediMaster="None", seniorJediMaster="None"}) {
+//   console.log(grandJediMaster);
 // }
-// f({}); // 0
+// f({seniorJediMaster:"Mace Windu"});
