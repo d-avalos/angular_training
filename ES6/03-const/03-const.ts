@@ -4,7 +4,7 @@ const ruleOfTwo; // SyntaxError: Missing initializer in const declaration
 
 // // Declaring a const variable
 // const ruleOfTwo = "A master and an apprentice";
-// moo = "A master and two apprentices"; // TypeError: `foo` is read-only
+// ruleOfTwo = "A master and two apprentices"; // TypeError: `foo` is read-only
 
 // // Block Scoping
 // function func() {
