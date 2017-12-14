@@ -21,7 +21,7 @@ let jediCouncilMembers = ['Yoda', 'Mace Windu', 'Obi-Wan Kenobi'];
 //   // console.log(typeof(index));
 // };
 
-// Iterate over array indexes with for-of
+// Iterate over array values with for-of
 for (let value of jediCouncilMembers) {
   console.log(value);
 };
