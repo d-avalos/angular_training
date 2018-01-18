@@ -16,6 +16,7 @@ setTimeout(function() {
 // };
 // console.log(jedis("Obi Wan", "Anakin"));
 
+// // Arguments with arrow functions
 // let jedis = (master,padawan) => `${master} is master of ${padawan}`;
 // console.log(jedis("Obi Wan", "Anakin"));
 
@@ -25,7 +26,7 @@ setTimeout(function() {
 // let jedi = {
 // 	name: "Obi Wan",
 // 	sayLater: function() {
-// 		console.log(`${this.name}`);
+// 		console.log(`${this.name}`); // `this` = this object
 // 	}
 // };
 // jedi.sayLater();
@@ -37,7 +38,7 @@ setTimeout(function() {
 //     name: "Obi Wan",
 //     sayLater: function () {
 //         setTimeout(function () {
-//             console.log(`${this.name}`);
+//             console.log(`${this.name}`); // `this` = new scope
 //         }, 1000);
 //     }
 // };
@@ -63,7 +64,7 @@ setTimeout(function() {
 // let jedi = {
 //     name: "Obi Wan",
 //     sayLater: function () {
-//         setTimeout(() => console.log(`${this.name}`), 1000);
+//         setTimeout(() => console.log(`${this.name}`), 1000); // `this` = this object again!!!
 //     }
 // };
 // jedi.sayLater();

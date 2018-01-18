@@ -18,7 +18,7 @@ function getPlanets() {
 	return planetList;
 }
 
-function getPlanetNames() {
+export default function getPlanetNames() {   // Adding a default export
 	let names = planetList.map(p => p.name);
 	return names;
 }

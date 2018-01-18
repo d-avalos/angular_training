@@ -4,9 +4,9 @@ const ruleOfTwo; // SyntaxError: Missing initializer in const declaration
 
 // // Declaring a const variable
 // const ruleOfTwo = "A master and an apprentice";
-// ruleOfTwo = "A master and two apprentices"; // TypeError: `foo` is read-only
+// ruleOfTwo = "A master and two apprentices"; // TypeError: `ruleOfTwo` is read-only
 
-// // Block Scoping
+// // Block Scoping. Just as LET
 // function func() {
 //     if (true) {
 //         const tmp = 123;

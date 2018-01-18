@@ -1,3 +1,4 @@
+// Define a class and create an object
 class Galaxy { 
 	planets: Array<string>;
 
@@ -17,6 +18,8 @@ var galaxyFarFarAway = new Galaxy(["Naboo", "Tatooine", "Endor"]);
 galaxyFarFarAway.show_planets();
 
 
+
+// // Inheritance
 // class Jedi {
 // 	constructor(public firstName, public lastName, private age){}
 // 	name() {
@@ -35,6 +38,7 @@ galaxyFarFarAway.show_planets();
 // 		return `${super.name()} and my master is ${this.master.name()}`;	
 // 	}
 
+// 	// // If you try to uncomment this method you will see an error because age is a private member of Jedi.
 // 	// myAge() {
 // 	// 	return `I'm ${this.age} years old`;
 // 	// }

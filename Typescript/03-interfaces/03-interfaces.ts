@@ -1,3 +1,4 @@
+// Type check whether an object meets a certain structure
 interface Planet {
 	name: string;
 	population: number;
@@ -18,6 +19,7 @@ blowPlanet(alderaan);
 
 
 
+// // A set of rules a class has to follow (Contract)
 // interface Character {
 //     firstName: string;
 //     lastName: string;

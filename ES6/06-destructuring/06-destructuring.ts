@@ -1,6 +1,6 @@
 // const notAJedi = {first: 'Anakin', last: 'Skywalker', age: 20 };
 
-// Old way
+// // Old way
 // const f = notAJedi.first;
 // const l = notAJedi.last;
 // console.log(f); 
@@ -19,7 +19,7 @@
 // console.log(last); 
 
 
-// // Destructuring an object same name is so common
+// // Destructuring an object same name is so common, so let's avoid duplicate code
 // const {first, last} = notAJedi;
 // console.log(first); 
 // console.log(last); 
@@ -31,9 +31,13 @@
 // console.log(x); 
 // console.log(y); 
 
+// // String destructuring
+// let [a, b, c] = 'abc';
+// console.log(a);
+// console.log(b);
+// console.log(c);
 
-
-// // Function Parameter object old
+// // Function Parameter object old way
 // function f(jediCouncilMembers) {
 //   console.log(jediCouncilMembers.grandJediMaster);
 // }
@@ -45,7 +49,7 @@
 // }
 // f({grandJediMaster:"Yoda", seniorJediMaster:"Mace Windu"});
 
-// // Function Parameter Destructuring default value
+// // Function Parameter Destructuring with default value
 // function f({grandJediMaster="None", seniorJediMaster="None"}) {
 //   console.log(grandJediMaster);
 // }

@@ -1,11 +1,11 @@
-// Block level?
+// Block level does not exist in JS
 {
     var universe = "Star Wars";
 }
 console.log(universe);
 
 
-// // Function level error
+// // Function level. Error when trying to invoke variable out of its function scope
 // function galaxy() {
 //     var planet = "Naboo";
 // }
@@ -13,7 +13,7 @@ console.log(universe);
 // console.log(planet);
 
 
-// // Function level
+// // Function level. Variable declared twice in scope will work as the same.
 // function galaxy() {
 //     var planet = "Naboo";
 //     for (var i = 0; i < 10; i++) {
@@ -23,7 +23,8 @@ console.log(universe);
 // }
 // galaxy();
 
-// // IIFE
+
+// // IIFE (immediately-invoked function expression)
 // function galaxy() {
 //     var planet = "Naboo";
 //     for (var i=0; i<5; i++) {
@@ -35,13 +36,21 @@ console.log(universe);
 // }
 // galaxy();
 
-		// function travelToAnotherPlanet() {
-		//   var planet = "Tatooine";
-		// }
-		// travelToAnotherPlanet();
+// // Same as last example, but without IIFE.
+// function galaxy() {
+//     var planet = "Naboo";
+//     for (var i=0; i<5; i++) {
+//         function travelToAnotherPlanet() {
+// 		  var planet = "Tatooine";
+// 		}
+// 		travelToAnotherPlanet();
+//     }
+//     console.log(planet);
+// }
+// galaxy();
 
 
-// // LET
+// // LET. Block level.
 // function galaxy() {
 //     var planet = "Naboo";
 //     for (var i = 0; i < 5; i++) {

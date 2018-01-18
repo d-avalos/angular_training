@@ -1,3 +1,4 @@
+// Simple decorator which adds a new property `population` to the class
 @population
 class Planet {
 	name;
@@ -16,7 +17,7 @@ console.log(alderaan["population"]());
 
 
 
-// // Parameters
+// // Decorator with parameters
 // @Population({
 // 	howMany: 2000000000
 // })
